@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Texto a Voz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Convertidor de Texto a Voz</h1>
+    
+        <!-- Input para seleccionar el archivo -->
+        <div class="file-input">
+            <input type="file" id="fileInput" accept=".pdf,.txt,.docx">
+            <label for="fileInput">Seleccionar Archivo</label>
+        </div>
+    
+        <!-- Indicador de carga -->
+        <div id="loadingIndicator" style="display:none;">Cargando archivo...</div>
+    
+        <!-- Contenedor para mostrar el texto -->
+        <div id="textContainer" class="text-container"></div>
+    
+        <!-- Botón para reproducir texto -->
+        <button id="speakButton">Reproducir</button>
+    
+        <!-- Mensajes de error -->
+        <div id="error" class="error"></div>
+    </div>
+    
+    
+
+<script src="script.js"></script>
+</body>
+</html>
